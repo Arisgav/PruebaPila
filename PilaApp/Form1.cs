@@ -44,7 +44,7 @@ namespace PilaApp
             
             Pilatext.Items.Add(linea);
 
-            
+            ///
             Tbnombre.Clear();
             Tbapellido.Clear();
             Tbcargo.Clear();
