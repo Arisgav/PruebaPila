@@ -29,10 +29,11 @@ namespace PilaApp
 
         private void Eliminar_Click(object sender, EventArgs e)
         {
-            Tbnombre.Clear();
-            Tbapellido.Clear();
-            Tbcargo.Clear();
-            Tbsalario.Clear();
+            if (Pilatext.SelectedIndex != -1)
+            {
+                
+                Pilatext.Items.RemoveAt(Pilatext.SelectedIndex);
+            }
         }
 
         private void Agregar_Click(object sender, EventArgs e)
