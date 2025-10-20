@@ -38,6 +38,9 @@
             this.Tbapellido = new System.Windows.Forms.TextBox();
             this.Tbcargo = new System.Windows.Forms.TextBox();
             this.Tbsalario = new System.Windows.Forms.TextBox();
+            this.Agregar = new System.Windows.Forms.Button();
+            this.Eliminar = new System.Windows.Forms.Button();
+            this.Pilatext = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Tbnombre
@@ -111,11 +114,42 @@
             this.Tbsalario.Size = new System.Drawing.Size(229, 20);
             this.Tbsalario.TabIndex = 8;
             // 
+            // Agregar
+            // 
+            this.Agregar.Location = new System.Drawing.Point(572, 75);
+            this.Agregar.Name = "Agregar";
+            this.Agregar.Size = new System.Drawing.Size(117, 59);
+            this.Agregar.TabIndex = 9;
+            this.Agregar.Text = "Agregar";
+            this.Agregar.UseVisualStyleBackColor = true;
+            this.Agregar.Click += new System.EventHandler(this.Agregar_Click);
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.Location = new System.Drawing.Point(567, 154);
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Size = new System.Drawing.Size(122, 72);
+            this.Eliminar.TabIndex = 10;
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.UseVisualStyleBackColor = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
+            // 
+            // Pilatext
+            // 
+            this.Pilatext.FormattingEnabled = true;
+            this.Pilatext.Location = new System.Drawing.Point(175, 164);
+            this.Pilatext.Name = "Pilatext";
+            this.Pilatext.Size = new System.Drawing.Size(263, 121);
+            this.Pilatext.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Pilatext);
+            this.Controls.Add(this.Eliminar);
+            this.Controls.Add(this.Agregar);
             this.Controls.Add(this.Tbsalario);
             this.Controls.Add(this.Tbcargo);
             this.Controls.Add(this.Tbapellido);
@@ -142,6 +176,9 @@
         private System.Windows.Forms.TextBox Tbapellido;
         private System.Windows.Forms.TextBox Tbcargo;
         private System.Windows.Forms.TextBox Tbsalario;
+        private System.Windows.Forms.Button Agregar;
+        private System.Windows.Forms.Button Eliminar;
+        private System.Windows.Forms.ListBox Pilatext;
     }
 }
 

@@ -26,5 +26,31 @@ namespace PilaApp
         {
 
         }
+
+        private void Eliminar_Click(object sender, EventArgs e)
+        {
+            Tbnombre.Clear();
+            Tbapellido.Clear();
+            Tbcargo.Clear();
+            Tbsalario.Clear();
+        }
+
+        private void Agregar_Click(object sender, EventArgs e)
+        {
+            
+            string linea = $"{Tbnombre.Text} {Tbapellido.Text} - {Tbcargo.Text} - ${Tbsalario.Text}";
+
+            
+            Pilatext.Items.Add(linea);
+
+            
+            Tbnombre.Clear();
+            Tbapellido.Clear();
+            Tbcargo.Clear();
+            Tbsalario.Clear();
+
+            
+            Tbnombre.Focus();
+        }
     }
 }
