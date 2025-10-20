@@ -29,6 +29,7 @@ namespace PilaApp
 
         private void Eliminar_Click(object sender, EventArgs e)
         {
+            //boton elimnar
             if (Pilatext.SelectedIndex != -1)
             {
                 
